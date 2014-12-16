@@ -67,6 +67,7 @@
   - [shortFmt](#shortfmt)
   - [byteFmt](#bytefmt)
   - [kbFmt](#kbfmt)
+  - [bpsFmt](#bpsfmt)
 - [Boolean](#boolean)
   - [isNull](#isnull)
   - [isDefined](#isdefined)
@@ -1169,8 +1170,18 @@ Converts kilobytes into formatted display<br/>
 <!--result
 1 MB
 1.00126 GB
-
 ```
+###bpsFmt
+Converts bits per second into formatted display<br/>
+**Usage:** ```number | bpsFmt: round-to-decimal```,
+```html
+<p>{{ 1873 | bpsFmt: 2 }}</p>
+<p>{{ 7648756834 | bpsFmt: 5 }}</p>
+<!--result
+1.87 kbps
+7.64876 GB
+```
+
 #Boolean
 >Used for boolean expression in chaining filters
 
